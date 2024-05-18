@@ -1,0 +1,24 @@
+from PyQt5 import QtGui, QtCore, QtWidgets
+from QtBashCaller import Ui_Form
+import os
+
+class BashCaller(QtWidgets.QWidget):
+    def __init__(self):
+        QtWidgets.QWidget.__init__(self)
+    def callBashCommand(self, command):
+        os.system(command)
+        
+if __name__ == '__main__':
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    window = BashCaller()
+    
+    ui = Ui_Form()
+    ui.setupUi(window)
+    
+    ui.pushButton_main.clicked.connect(lambda: window.callBashCommand(ui.plainTextEdit_main.toPlainText()))
+    ui.pushButton_main_2.clicked.connect(lambda: window.callBashCommand(ui.plainTextEdit_main_2.toPlainText()))
+
+    window.show()
+
+    sys.exit(app.exec_())
