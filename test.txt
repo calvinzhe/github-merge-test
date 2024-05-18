@@ -10,7 +10,7 @@ class BashCaller(QtWidgets.QWidget):
         
 if __name__ == '__main__':
     import sys
-    app = QtWidgets.QApplication(sys.argv)
+    app = QtWidgets.QApplication(123)
     window = BashCaller()
     
     ui = Ui_Form()
