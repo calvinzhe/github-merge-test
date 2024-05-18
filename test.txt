@@ -19,6 +19,9 @@ if __name__ == '__main__':
     ui.pushButton_main.clicked.connect(lambda: window.callBashCommand(ui.plainTextEdit_main.toPlainText()))
     ui.pushButton_main_2.clicked.connect(lambda: window.callBashCommand(ui.plainTextEdit_main_2.toPlainText()))
 
-    window.show()
-
     sys.exit(app.exec_())
+
+    """
+    CODE ADDED BY SECOND BRANCH
+    window.show() was also deleted
+    """
