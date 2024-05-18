@@ -10,7 +10,6 @@ class BashCaller(QtWidgets.QWidget):
         
 if __name__ == '__main__':
     import sys
-    app = QtWidgets.QApplication(sys.argv)
     window = BashCaller()
     
     ui = Ui_Form()
@@ -29,3 +28,5 @@ if __name__ == '__main__':
     sys.exit(app.exec_()) was also deleted
 
     """
+
+    app = QtWidgets.QApplication(sys.argv)
