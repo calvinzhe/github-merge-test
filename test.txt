@@ -21,6 +21,7 @@ if __name__ == '__main__':
 
     window.show()
 
-    sys.exit(app.exec_())
-
+    """
     CODE ADDED BY MAIN BRANCH
+    sys.exit(app.exec_()) was also deleted
+    """
